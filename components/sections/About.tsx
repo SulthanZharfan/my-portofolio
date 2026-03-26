@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import profileImg from '@/public/profile.jpg';
 import { SectionWrapper } from '../ui/SectionWrapper';
 import { CyberCard } from '../ui/CyberCard';
 import { useLanguage } from '@/context/LanguageContext';
@@ -23,7 +24,7 @@ export const About = () => {
               <Snowflake className="w-8 h-8 text-neon-ice drop-shadow-ice-glow animate-spin-slow opacity-50" />
             </div>
             <Image
-              src="/profile.jpg"
+              src={profileImg}
               alt="Muhammad Sulthan Zharfan"
               fill
               className="object-cover transition-all duration-700 opacity-100"
