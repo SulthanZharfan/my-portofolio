@@ -23,7 +23,7 @@ export const About = () => {
               <Snowflake className="w-8 h-8 text-neon-ice drop-shadow-ice-glow animate-spin-slow opacity-50" />
             </div>
             <Image
-              src={process.env.NODE_ENV === 'production' ? '/my-portofolio/profile.jpg' : '/profile.jpg'}
+              src="/profile.jpg"
               alt="Muhammad Sulthan Zharfan"
               fill
               className="object-cover transition-all duration-700 opacity-100"

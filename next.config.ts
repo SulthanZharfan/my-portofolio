@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
   },
   // Ensure the app works correctly at sulthanzharfan.github.io/my-portofolio/
   basePath: isProd ? `/${repoName}` : undefined,
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
 };
 
 export default nextConfig;
