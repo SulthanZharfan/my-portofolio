@@ -12,7 +12,7 @@ export const HeroSection = () => {
   const { language, t } = useLanguage();
 
   const content = {
-    badge: { en: "Available for Hire", id: "Siap Bekerja" },
+    badge: { en: "Currently Working", id: "Sedang Bekerja" },
     tagline: { en: "Crafting Interactive Worlds Through Code", id: "Membangun Dunia Interaktif Melalui Kode" },
     viewProjects: { en: "View Projects", id: "Lihat Proyek" },
     contactMe: { en: "Contact Me", id: "Hubungi Saya" }

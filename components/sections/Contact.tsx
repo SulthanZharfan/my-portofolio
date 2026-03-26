@@ -114,6 +114,7 @@ export const Contact = () => {
                     onSubmit={handleSubmit}
                     className="space-y-6"
                   >
+                    <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label className="text-[10px] font-bold uppercase tracking-widest text-neon-purple ml-1">SYSTEM_ID</label>
