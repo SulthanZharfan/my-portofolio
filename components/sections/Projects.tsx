@@ -18,17 +18,17 @@ export const Projects = () => {
 
   return (
     <SectionWrapper id="projects" title={trans.title}>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {projects.map((project, index) => (
-          <Reveal key={index} width="100%" delay={index * 0.1}>
-            <CyberCard className="flex flex-col h-full overflow-hidden">
-              <div className="relative aspect-video bg-neutral-900 mb-6 rounded-lg overflow-hidden border border-neutral-800 group-hover:border-neon-ice/60 transition-colors">
+          <Reveal key={index} width="100%" className="h-full" delay={index * 0.1}>
+            <CyberCard className="flex flex-col h-full overflow-hidden p-0">
+              <div className="relative aspect-video bg-neutral-900 rounded-t-lg overflow-hidden border-b border-neutral-800 group-hover:border-neon-ice/60 transition-colors">
                  <Image 
                     src={project.image} 
                     alt={t(project.title)}
                     fill
                     className="object-cover opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                    sizes="(max-w-768px) 100vw, 50vw"
+                    sizes="(max-w-768px) 100vw, 33vw"
                     loading="lazy"
                  />
                  <div className="absolute top-2 right-2 px-2 py-1 bg-black/50 backdrop-blur-sm rounded text-[10px] text-white font-mono flex items-center gap-1 z-10">
@@ -37,8 +37,8 @@ export const Projects = () => {
                  </div>
               </div>
               
-              <div className="flex flex-col flex-grow text-left">
-                <h3 className="text-2xl font-black mb-3 group-hover:text-neon-purple transition-colors tracking-tighter">
+              <div className="flex flex-col flex-grow text-left p-5 md:p-6">
+                <h3 className="text-xl md:text-2xl font-black mb-3 group-hover:text-neon-purple transition-colors tracking-tighter">
                   {t(project.title)}
                 </h3>
                 <p className="text-neutral-500 text-sm mb-6 leading-relaxed">

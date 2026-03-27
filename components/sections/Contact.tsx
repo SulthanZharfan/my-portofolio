@@ -55,21 +55,21 @@ export const Contact = () => {
       <div className="grid md:grid-cols-5 gap-12">
         <div className="md:col-span-2 space-y-8">
           <Reveal width="100%">
-            <CyberCard className="flex items-center gap-4 p-6">
-              <div className="p-2.5 w-fit rounded-xl bg-neon-purple/10 text-neon-purple">
-                <Mail size={24} />
+            <CyberCard className="flex items-center gap-4 p-4 md:p-6">
+              <div className="p-2 w-fit rounded-xl bg-neon-purple/10 text-neon-purple flex-shrink-0">
+                <Mail size={20} className="md:w-6 md:h-6" />
               </div>
-              <div>
-                <p className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-1">{trans.email}</p>
-                <p className="text-lg font-medium text-neutral-800 underline decoration-neon-purple/30 decoration-2 underline-offset-4">zharfan2231@gmail.com</p>
+              <div className="min-w-0">
+                <p className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-0.5">{trans.email}</p>
+                <p className="text-sm sm:text-base md:text-lg font-medium text-neutral-800 underline decoration-neon-purple/30 decoration-2 underline-offset-4 truncate">zharfan2231@gmail.com</p>
               </div>
             </CyberCard>
           </Reveal>
 
           <Reveal width="100%" delay={0.4}>
-            <CyberCard className="p-8">
-              <p className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-6">{trans.socials}</p>
-              <div className="flex gap-4">
+            <CyberCard className="p-6 md:p-8">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-4 md:mb-6">{trans.socials}</p>
+              <div className="flex gap-3 md:gap-4">
                 {[
                   { icon: Github, link: "https://github.com/SulthanZharfan", color: "hover:bg-black hover:text-white" },
                   { icon: Linkedin, link: "https://www.linkedin.com/in/muhammadsulthanzharfan/", color: "hover:bg-[#0077b5] hover:text-white" },
@@ -78,9 +78,9 @@ export const Contact = () => {
                   <a 
                     key={idx} 
                     href={social.link} 
-                    className={cn("p-4 rounded-xl bg-neutral-50 text-neutral-400 transition-all duration-300 border border-neutral-100", social.color)}
+                    className={cn("p-3 md:p-4 rounded-xl bg-neutral-50 text-neutral-400 transition-all duration-300 border border-neutral-100", social.color)}
                   >
-                    <social.icon size={20} />
+                    <social.icon size={18} className="md:w-5 md:h-5" />
                   </a>
                 ))}
               </div>

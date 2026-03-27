@@ -15,17 +15,17 @@ export const Skills = () => {
 
   return (
     <SectionWrapper id="skills" title={t.title}>
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         {skills.map((group, idx) => (
           <Reveal key={idx} width="100%" delay={idx * 0.2}>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6 md:gap-8">
               <div className="flex items-center gap-3 px-4 py-2 bg-neon-purple/5 border-l-4 border-neon-purple rounded-r-md w-fit">
-                 <span className="text-xs font-bold tracking-widest text-neon-purple uppercase">{group.category}</span>
+                 <span className="text-[10px] md:text-xs font-bold tracking-widest text-neon-purple uppercase">{group.category}</span>
               </div>
               
-              <div className="grid gap-6">
+              <div className="grid gap-4 md:gap-6">
                 {group.items.map((skill, sIdx) => (
-                  <CyberCard key={sIdx} className="p-5 flex flex-col gap-4">
+                  <CyberCard key={sIdx} className="p-4 md:p-5 flex flex-col gap-3 md:gap-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div className="p-2 rounded-lg bg-neon-ice/10 text-neon-ice group-hover:bg-neon-ice/20 transition-colors">

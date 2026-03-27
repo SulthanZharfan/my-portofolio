@@ -31,7 +31,7 @@ export const CurrentJob = () => {
                   {t(currentJob.status)}
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl font-black text-neutral-900 tracking-tighter">
+                <h3 className="text-2xl md:text-4xl font-black text-neutral-900 tracking-tighter">
                   {t(currentJob.role)} @ <span className="text-neon-purple">{currentJob.company}</span>
                 </h3>
                 

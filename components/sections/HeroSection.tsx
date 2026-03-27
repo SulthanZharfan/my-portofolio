@@ -34,7 +34,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <SectionWrapper id="home" className="pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-center text-center">
+    <SectionWrapper id="home" className="pt-24 pb-20 md:pt-48 md:pb-32 flex flex-col items-center text-center">
       <GlowEffect color="purple" size="lg" className="top-1/4" />
       
       <motion.div
@@ -48,14 +48,14 @@ export const HeroSection = () => {
           {t(content.badge)}
         </motion.div>
         
-        <motion.h1 variants={itemVariants} className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
+        <motion.h1 variants={itemVariants} className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
           <span className="text-neutral-900 block md:inline">Muhammad Sulthan </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-ice to-neon-purple bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] drop-shadow-neon-glow">
             Zharfan
           </span>
         </motion.h1>
         
-        <motion.p variants={itemVariants} className="text-lg md:text-2xl font-mono text-neutral-400 mb-12 flex items-center gap-3">
+        <motion.p variants={itemVariants} className="text-base md:text-2xl font-mono text-neutral-400 mb-12 flex items-center gap-3">
           <span className="text-neon-ice">&lt;</span>
           Web Developer
           <span className="text-neon-ice">/&gt;</span>
