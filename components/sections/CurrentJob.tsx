@@ -7,12 +7,14 @@ import { CyberCard } from "../ui/CyberCard";
 import { currentJob } from "@/data/currentJob";
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "../animation/Reveal";
+import { translations } from "@/data/translations";
 
 export const CurrentJob = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const trans = translations[language].currentJob;
 
   return (
-    <SectionWrapper id="currect-job" title="Current Status" className="bg-neutral-50/50">
+    <SectionWrapper id="currect-job" title={trans.title} className="bg-neutral-50/50">
       <Reveal width="100%">
         <div className="max-w-4xl mx-auto">
           <CyberCard className="relative overflow-hidden border-2 border-neon-purple/40 shadow-neon-glow-strong bg-white">
@@ -43,7 +45,7 @@ export const CurrentJob = () => {
                     START_DATE: {currentJob.startDate}
                   </span>
                   <span>|</span>
-                  <span>ENV: PRODUCTION</span>
+                  <span>ENV: {trans.env}</span>
                 </div>
               </div>
 

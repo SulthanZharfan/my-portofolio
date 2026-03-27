@@ -73,7 +73,7 @@ export const Contact = () => {
                 {[
                   { icon: Github, link: "https://github.com/SulthanZharfan", color: "hover:bg-black hover:text-white" },
                   { icon: Linkedin, link: "https://www.linkedin.com/in/muhammadsulthanzharfan/", color: "hover:bg-[#0077b5] hover:text-white" },
-                  { icon: MapPin, link: "#", color: "hover:bg-neon-ice hover:text-white" },
+                  { icon: Mail, link: "mailto:zharfan2231@gmail.com", color: "hover:bg-neon-purple hover:text-white" },
                 ].map((social, idx) => (
                   <a 
                     key={idx} 

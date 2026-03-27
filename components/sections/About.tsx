@@ -62,7 +62,7 @@ export const About = () => {
                   <MapPin size={16} />
                   <span className="text-xs font-bold uppercase tracking-widest">{trans.base}</span>
                 </div>
-                <span className="text-lg font-medium text-neutral-800">Jakarta, Indonesia</span>
+                <span className="text-lg font-medium text-neutral-800">Bogor, Indonesia</span>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2 text-neon-ice mb-1">

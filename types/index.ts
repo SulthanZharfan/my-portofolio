@@ -6,7 +6,7 @@ export type Translatable = {
 export interface Project {
   title: Translatable | string;
   description: Translatable | string;
-  image: string;
+  image: any;
   tags: string[];
   link?: string;
   github?: string;

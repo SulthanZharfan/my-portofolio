@@ -19,7 +19,7 @@ export const translations = {
       goal: "Bridging Imagination & Reality",
       base: "Base",
       exp: "Experience",
-      years: "2+ Years",
+      years: "< 1 Year",
     },
     skills: {
       title: "Technical Arsenal",
@@ -72,7 +72,7 @@ export const translations = {
       goal: "Menjembatani Imajinasi & Kenyataan",
       base: "Lokasi",
       exp: "Pengalaman",
-      years: "2+ Tahun",
+      years: "< 1 Tahun",
     },
     skills: {
       title: "Arsenal Teknis",

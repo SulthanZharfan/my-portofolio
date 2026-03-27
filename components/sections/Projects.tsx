@@ -18,7 +18,7 @@ export const Projects = () => {
 
   return (
     <SectionWrapper id="projects" title={trans.title}>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <Reveal key={index} width="100%" delay={index * 0.1}>
             <CyberCard className="flex flex-col h-full overflow-hidden">
