@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "ZhaRa | Web Developer & UI/UX Specialist",
   description: "Portfolio profesional Muhammad Sulthan Zharfan (ZhaRa). Membangun antarmuka web masa depan dengan Next.js, TypeScript, dan desain futuristik.",
@@ -27,7 +32,6 @@ export const metadata: Metadata = {
     description: "Explore the futuristic digital projects of Muhammad Sulthan Zharfan.",
     images: [],
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
 };
 

@@ -56,14 +56,14 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-300",
-        isMenuOpen ? "inset-0 bg-white" : "px-6 py-4",
+        isMenuOpen ? "inset-0 bg-white" : "px-4 sm:px-6 py-4",
         !isMenuOpen && isScrolled ? "bg-white/90 backdrop-blur-lg border-b border-neon-ice/20 py-3 shadow-sm" : 
         !isMenuOpen ? "bg-transparent" : ""
       )}
     >
       <div className={cn(
-        "max-w-7xl mx-auto flex flex-col h-full",
-        !isMenuOpen ? "flex-row items-center justify-between" : ""
+        "max-w-7xl mx-auto flex h-full",
+        isMenuOpen ? "flex-col" : "flex-row items-center justify-between"
       )}>
         {/* Top Bar (Logo + Toggle) */}
         <div className={cn(
