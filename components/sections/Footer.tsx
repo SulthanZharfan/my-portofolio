@@ -15,7 +15,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="py-12 border-t border-neutral-100 bg-white">
+    <footer className="py-12 border-t border-border bg-background">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-sm text-neutral-400 font-mono tracking-tighter">
           {t(content.copyright)}

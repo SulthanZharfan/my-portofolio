@@ -14,10 +14,10 @@ export const CurrentJob = () => {
   const trans = translations[language].currentJob;
 
   return (
-    <SectionWrapper id="currect-job" title={trans.title} className="bg-neutral-50/50">
+    <SectionWrapper id="currect-job" title={trans.title} className="bg-card/30">
       <Reveal width="100%">
         <div className="max-w-4xl mx-auto">
-          <CyberCard className="relative overflow-hidden border-2 border-neon-purple/40 shadow-neon-glow-strong bg-white">
+          <CyberCard className="relative overflow-hidden border-2 border-neon-purple/40 shadow-neon-glow-strong bg-card">
             {/* Animated Background Pulse */}
             <motion.div 
                animate={{ opacity: [0.05, 0.15, 0.05] }}
@@ -31,15 +31,15 @@ export const CurrentJob = () => {
                   {t(currentJob.status)}
                 </div>
                 
-                <h3 className="text-2xl md:text-4xl font-black text-neutral-900 tracking-tighter">
+                <h3 className="text-2xl md:text-4xl font-black text-foreground tracking-tighter">
                   {t(currentJob.role)} @ <span className="text-neon-purple">{currentJob.company}</span>
                 </h3>
                 
-                <p className="text-neutral-500 leading-relaxed text-lg italic">
+                <p className="text-foreground/70 leading-relaxed text-lg italic">
                   "{t(currentJob.description)}"
                 </p>
                 
-                <div className="pt-4 flex items-center justify-center md:justify-start gap-4 text-xs font-mono text-neutral-400">
+                <div className="pt-4 flex items-center justify-center md:justify-start gap-4 text-xs font-mono text-foreground/50">
                   <span className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-neon-ice animate-pulse" />
                     START_DATE: {currentJob.startDate}

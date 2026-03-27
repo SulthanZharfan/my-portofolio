@@ -61,7 +61,7 @@ export const Contact = () => {
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-0.5">{trans.email}</p>
-                <p className="text-sm sm:text-base md:text-lg font-medium text-neutral-800 underline decoration-neon-purple/30 decoration-2 underline-offset-4 truncate">zharfan2231@gmail.com</p>
+                <p className="text-sm sm:text-base md:text-lg font-medium text-foreground underline decoration-neon-purple/30 decoration-2 underline-offset-4 truncate">zharfan2231@gmail.com</p>
               </div>
             </CyberCard>
           </Reveal>
@@ -78,7 +78,7 @@ export const Contact = () => {
                   <a 
                     key={idx} 
                     href={social.link} 
-                    className={cn("p-3 md:p-4 rounded-xl bg-neutral-50 text-neutral-400 transition-all duration-300 border border-neutral-100", social.color)}
+                    className={cn("p-3 md:p-4 rounded-xl bg-border/20 text-neutral-400 transition-all duration-300 border border-border", social.color)}
                   >
                     <social.icon size={18} className="md:w-5 md:h-5" />
                   </a>
@@ -123,7 +123,7 @@ export const Contact = () => {
                           name="name"
                           type="text" 
                           placeholder={trans.name}
-                          className="w-full bg-neutral-100/50 border border-neutral-100 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm font-mono"
+                          className="w-full bg-border/20 border border-border rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm font-mono text-foreground"
                         />
                       </div>
                       <div className="space-y-2">
@@ -133,7 +133,7 @@ export const Contact = () => {
                           name="email"
                           type="email" 
                           placeholder={trans.mail}
-                          className="w-full bg-neutral-100/50 border border-neutral-100 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm font-mono"
+                          className="w-full bg-border/20 border border-border rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm font-mono text-foreground"
                         />
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export const Contact = () => {
                         name="message"
                         rows={4} 
                         placeholder={trans.msg}
-                        className="w-full bg-neutral-100/50 border border-neutral-100 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm resize-none font-mono"
+                        className="w-full bg-border/20 border border-border rounded-lg px-4 py-3 focus:outline-none focus:border-neon-purple transition-colors text-sm resize-none font-mono text-foreground"
                       />
                     </div>
 

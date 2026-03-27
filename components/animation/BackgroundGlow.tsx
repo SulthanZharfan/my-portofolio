@@ -23,10 +23,10 @@ export const BackgroundGlow = () => {
     }));
   }, []);
 
-  if (!mounted) return <div className="fixed inset-0 -z-20 bg-neutral-50/30" />;
+  if (!mounted) return <div className="fixed inset-0 -z-20 bg-background" />;
 
   return (
-    <div className="fixed inset-0 -z-20 overflow-hidden pointer-events-none bg-neutral-50/30">
+    <div className="fixed inset-0 -z-20 overflow-hidden pointer-events-none bg-background">
       {/* Subtle Static Gradients (Lightweight) */}
       <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-neon-purple/5 blur-[100px] rounded-full opacity-50" />
       <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-neon-ice/10 blur-[100px] rounded-full opacity-50" />

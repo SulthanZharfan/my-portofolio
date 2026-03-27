@@ -20,7 +20,7 @@ export const Experience = () => {
       <GlowEffect color="purple" size="md" className="right-0 top-1/2" />
       
       <div className="relative space-y-12">
-        <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-neutral-200 to-transparent md:-translate-x-1/2" />
+        <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent md:-translate-x-1/2" />
 
         {experience.map((exp, index) => (
           <Reveal key={index} width="100%" delay={index * 0.2}>
@@ -46,12 +46,12 @@ export const Experience = () => {
                   
                   <h3 className="text-xl font-black mb-1 tracking-tighter">{exp.company}</h3>
                   
-                  <div className="flex items-center gap-2 text-neutral-400 text-[10px] mb-6 px-2 py-0.5 rounded bg-neutral-50 w-fit font-mono">
+                  <div className="flex items-center gap-2 text-neutral-400 text-[10px] mb-6 px-2 py-0.5 rounded bg-border/20 w-fit font-mono">
                     <Calendar size={12} />
                     <span>{exp.duration}</span>
                   </div>
                   
-                  <p className="text-neutral-500 text-sm leading-relaxed border-l-2 border-neutral-100 pl-4 py-1">
+                  <p className="text-neutral-500 text-sm leading-relaxed border-l-2 border-border pl-4 py-1">
                     {t(exp.description)}
                   </p>
                 </CyberCard>

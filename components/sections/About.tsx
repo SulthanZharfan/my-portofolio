@@ -42,7 +42,7 @@ export const About = () => {
               <h3 className="text-xl md:text-2xl font-bold text-neon-purple tracking-tight">
                 {trans.goal}
               </h3>
-              <p className="text-base md:text-xl text-neutral-700 leading-relaxed font-light">
+              <p className="text-base md:text-xl text-foreground/80 leading-relaxed font-light">
                 {t({
                   en: "I am a passionate Web Developer dedicated to building sleek, functional, and user-centric web applications. My journey started with a fascination for interactive digital worlds, and now I turn that passion into elegant code.",
                   id: "Saya adalah Web Developer yang berdedikasi untuk membangun aplikasi web yang ramping, fungsional, dan berpusat pada pengguna. Perjalanan saya dimulai dengan ketertarikan pada dunia digital interaktif, dan sekarang saya mengubah gairah itu menjadi kode yang elegan."
@@ -56,20 +56,20 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-6 border-t border-neutral-100">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-6 border-t border-border">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2 text-neon-purple mb-1">
                   <MapPin size={16} />
                   <span className="text-xs font-bold uppercase tracking-widest">{trans.base}</span>
                 </div>
-                <span className="text-lg font-medium text-neutral-800">Bogor, Indonesia</span>
+                <span className="text-lg font-medium text-foreground">Bogor, Indonesia</span>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2 text-neon-ice mb-1">
                   <Calendar size={16} />
                   <span className="text-xs font-bold uppercase tracking-widest">{trans.exp}</span>
                 </div>
-                <span className="text-lg font-medium text-neutral-800">{trans.years}</span>
+                <span className="text-lg font-medium text-foreground">{trans.years}</span>
               </div>
             </div>
           </div>

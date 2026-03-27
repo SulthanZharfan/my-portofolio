@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { LanguageToggle } from "../ui/LanguageToggle";
+import { ThemeToggle } from "../ui/ThemeToggle";
 import { useLanguage } from "@/context/LanguageContext";
+import { useTheme } from "@/context/ThemeContext";
 import { cn } from "@/lib/utils";
 import { translations } from "@/data/translations";
 import { Menu, X } from "lucide-react";
@@ -56,8 +58,8 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-300",
-        isMenuOpen ? "inset-0 bg-white" : "px-4 sm:px-6 py-4",
-        !isMenuOpen && isScrolled ? "bg-white/90 backdrop-blur-lg border-b border-neon-ice/20 py-3 shadow-sm" : 
+        isMenuOpen ? "inset-0 bg-background" : "px-4 sm:px-6 py-4",
+        !isMenuOpen && isScrolled ? "bg-background/90 backdrop-blur-lg border-b border-neon-ice/20 py-3 shadow-sm" : 
         !isMenuOpen ? "bg-transparent" : ""
       )}
     >
@@ -76,18 +78,18 @@ export const Navbar = () => {
             className="text-xl font-bold tracking-tighter hover:text-neon-purple transition-shadow flex items-center gap-1 group"
           >
             <div className="w-8 h-8 rounded-lg bg-neon-purple flex items-center justify-center text-white text-xs shadow-neon-glow group-hover:scale-110 transition-transform font-bold">ZP</div>
-            <span className="flex text-neutral-900">ZhaRa<span className="text-neon-purple">Porto</span></span>
+            <span className="flex text-foreground">ZhaRa<span className="text-neon-purple">Porto</span></span>
           </Link>
 
           {/* Desktop Nav Icons/Toggles (Hidden on Mobile Menu) */}
           {!isMenuOpen && (
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-6 xl:gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.id}
                   href={link.href}
                   className={cn(
-                    "relative text-sm font-bold uppercase tracking-widest transition-all duration-300 px-1 py-1",
+                    "relative text-xs xl:text-sm font-bold uppercase tracking-widest transition-all duration-300 px-1 py-1",
                     activeSection === link.id ? "text-neon-purple" : "text-neutral-400 hover:text-neon-purple"
                   )}
                 >
@@ -99,17 +101,25 @@ export const Navbar = () => {
                   )} />
                 </Link>
               ))}
-              <div className="h-6 w-px bg-neutral-200 mx-2" />
-              <LanguageToggle />
+              <div className="h-6 w-px bg-neutral-200 dark:bg-neutral-800 mx-2" />
+              <div className="flex items-center gap-3">
+                <ThemeToggle />
+                <LanguageToggle />
+              </div>
             </div>
           )}
 
           {/* Mobile Controls */}
-          <div className="flex md:hidden items-center gap-4">
-            {!isMenuOpen && <LanguageToggle />}
+          <div className="flex lg:hidden items-center gap-4">
+            {!isMenuOpen && (
+              <div className="flex items-center gap-2">
+                <ThemeToggle />
+                <LanguageToggle />
+              </div>
+            )}
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-neutral-900"
+              className="p-2 text-foreground"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -124,7 +134,7 @@ export const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="flex-grow flex flex-col md:hidden overflow-hidden"
+              className="flex-grow flex flex-col lg:hidden overflow-hidden bg-background"
             >
               <div className="flex-grow flex flex-col items-start px-8 pt-12 space-y-6 overflow-y-auto">
                 {navLinks.map((link, idx) => (
@@ -153,13 +163,14 @@ export const Navbar = () => {
               </div>
 
               {/* Mobile Footer */}
-              <div className="p-8 border-t border-neutral-100 bg-neutral-50/50">
+              <div className="p-8 border-t border-border bg-card/50">
                 <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-neutral-400 mb-4">Connect</p>
                 <div className="flex flex-col gap-2">
                    <span className="text-xs text-neutral-500 font-mono tracking-tighter">© 2026 ZhaRaPorto // MSZ</span>
                    <div className="flex gap-4 mt-2">
+                      <ThemeToggle />
                       <LanguageToggle />
-                      <span className="text-[10px] text-neutral-300 uppercase self-center">System Online</span>
+                      <span className="text-[10px] text-neutral-300 dark:text-neutral-600 uppercase self-center">System Online</span>
                    </div>
                 </div>
               </div>

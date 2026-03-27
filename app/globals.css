@@ -11,12 +11,23 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: 255 255 255;
+  --foreground: 9 9 11;
+  --card: 255 255 255;
+  --border: 229 231 235;
+}
+
+.dark {
+  --background: 10 12 16;
+  --foreground: 248 250 252;
+  --card: 18 21 32;
+  --border: 30 41 59;
 }
 
 body {
-  @apply bg-background text-foreground;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  @apply transition-colors duration-300;
   font-family: 'Inter', sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
   overflow-x: hidden;

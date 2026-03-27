@@ -48,20 +48,20 @@ export const HeroSection = () => {
           {t(content.badge)}
         </motion.div>
         
-        <motion.h1 variants={itemVariants} className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-none">
-          <span className="text-neutral-900 block md:inline">Muhammad Sulthan </span>
+        <motion.h1 variants={itemVariants} className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tighter mb-8 leading-none">
+          <span className="text-foreground block lg:inline">Muhammad Sulthan </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-ice to-neon-purple bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] drop-shadow-neon-glow">
             Zharfan
           </span>
         </motion.h1>
         
-        <motion.p variants={itemVariants} className="text-base md:text-2xl font-mono text-neutral-400 mb-12 flex items-center gap-3">
+        <motion.p variants={itemVariants} className="text-base md:text-2xl font-mono text-neutral-400 dark:text-neutral-300 mb-12 flex items-center gap-3">
           <span className="text-neon-ice">&lt;</span>
-          Web Developer
+          {language === 'en' ? 'Web Developer' : 'Pengembang Web'}
           <span className="text-neon-ice">/&gt;</span>
         </motion.p>
         
-        <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-500 max-w-2xl mb-12 italic leading-relaxed border-l-4 border-neon-ice/20 pl-6 py-2">
+        <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-600 dark:text-neutral-300 max-w-2xl mb-12 italic leading-relaxed border-l-4 border-neon-ice/20 pl-6 py-2">
           "{t(content.tagline)}"
         </motion.p>
         

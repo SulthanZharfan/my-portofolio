@@ -31,22 +31,22 @@ export const Skills = () => {
                         <div className="p-2 rounded-lg bg-neon-ice/10 text-neon-ice group-hover:bg-neon-ice/20 transition-colors">
                           <skill.icon size={20} />
                         </div>
-                        <span className="font-bold text-neutral-800 tracking-tight">{skill.name}</span>
+                        <span className="font-bold text-foreground tracking-tight">{skill.name}</span>
                       </div>
                       <span className="text-[10px] font-mono text-neon-purple">{skill.level}%</span>
                     </div>
                     
-                    <div className="relative h-1.5 w-full bg-neutral-100 rounded-full overflow-hidden">
+                    <div className="relative h-1.5 w-full bg-border rounded-full overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
                         className="absolute top-0 left-0 h-full bg-gradient-to-r from-neon-purple to-neon-ice shadow-neon-glow"
                       />
-                      <div className="absolute top-0 left-0 h-full w-20 bg-white/30 skew-x-12 translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
+                      <div className="absolute top-0 left-0 h-full w-20 bg-white/30 dark:bg-white/10 skew-x-12 translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
                     </div>
                     
-                    <div className="text-[10px] text-neutral-400 font-mono uppercase tracking-tighter">
+                    <div className="text-[10px] text-neutral-400 dark:text-neutral-500 font-mono uppercase tracking-tighter">
                        {t.level} :: {skill.level > 80 ? "OPTIMIZED" : "STABLE"}
                     </div>
                   </CyberCard>

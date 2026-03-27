@@ -27,7 +27,7 @@ export const Certificates = () => {
                   <Award size={24} />
                 </div>
                 <div>
-                  <h3 className="font-black text-neutral-800 tracking-tight">{t(cert.title)}</h3>
+                  <h3 className="font-black text-foreground tracking-tight">{t(cert.title)}</h3>
                   <p className="text-[10px] text-neutral-400 uppercase tracking-widest font-mono">{cert.issuer} • {cert.year}</p>
                 </div>
               </div>
