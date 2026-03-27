@@ -23,7 +23,6 @@ export const translations = {
     },
     skills: {
       title: "Technical Arsenal",
-      level: "Sync Level",
     },
     projects: {
       title: "Digital Artifacts",
@@ -76,7 +75,6 @@ export const translations = {
     },
     skills: {
       title: "Arsenal Teknis",
-      level: "Level Sinkronisasi",
     },
     projects: {
       title: "Artefak Digital",
