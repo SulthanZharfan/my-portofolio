@@ -1,6 +1,7 @@
 import { Project } from "@/types";
-import aetherImg from "@/public/projects/aether.png";
-import nexusImg from "@/public/projects/nexus.png";
+import sippaImg from "@/public/projects/SIPPA.png";
+import WargaBersihImg from "@/public/projects/WargaBersih.png";
+import StudentTaskImg from "@/public/projects/StudentTaskManagement.png";
 import glitchImg from "@/public/projects/glitch.png";
 
 export const projects: Project[] = [
@@ -10,7 +11,7 @@ export const projects: Project[] = [
       en: "Information System for Tracking Child Development (Sistem Informasi Pencatatan Perkembangan Anak). A comprehensive platform built for a thesis project.", 
       id: "Sistem Informasi Pencatatan Perkembangan Anak. Platform komprehensif yang dibangun untuk proyek skripsi." 
     },
-    image: aetherImg,
+    image: sippaImg,
     tags: ["PHP", "Laravel", "MySQL", "Bootstrap"],
     link: "https://github.com/SulthanZharfan/SIPPA-Sistem-Informasi-Pencatatan-Perkembangan-Anak-",
   },
@@ -20,7 +21,7 @@ export const projects: Project[] = [
       en: "A digital landing page for RT/RW management to help residents and administrators maintain neighborhood cleanliness and environment.", 
       id: "Landing page digital untuk manajemen RT/RW guna membantu warga dan pengurus menjaga kebersihan lingkungan." 
     },
-    image: nexusImg,
+    image: WargaBersihImg,
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     link: "https://github.com/SulthanZharfan/Landing-Page-WargaBersih",
   },
@@ -30,7 +31,7 @@ export const projects: Project[] = [
       en: "A task management application specifically designed for students to organize assignments and academic schedules.", 
       id: "Aplikasi manajemen tugas yang dirancang khusus untuk mahasiswa guna mengelola tugas dan jadwal akademik." 
     },
-    image: glitchImg,
+    image: StudentTaskImg,
     tags: ["Flutter", "Dart", "Mobile App", "Cross-Platform"],
     link: "https://github.com/SulthanZharfan/UTS_PBM",
   }

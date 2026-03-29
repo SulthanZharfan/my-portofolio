@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZiraraPage | Web Developer Portfolio",
+    title: "ZhaRaPorto | Web Developer Portfolio",
     description: "Explore the futuristic digital projects of Muhammad Sulthan Zharfan.",
     images: [],
   },

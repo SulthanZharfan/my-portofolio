@@ -1,4 +1,4 @@
-# Deployment Guide: ZiraraPage 🚀
+# Deployment Guide: ZhaRaPorto 🚀
 
 Panduan langkah demi langkah untuk merilis website Anda secara online menggunakan Vercel (Rekomendasi Utama).
 
@@ -9,7 +9,7 @@ Panduan langkah demi langkah untuk merilis website Anda secara online menggunaka
 ## Metode 1: Via Vercel Dashboard (Paling Mudah)
 1. Klik tombol **"Add New"** -> **"Project"** di dashboard Vercel.
 2. Hubungkan akun GitHub Anda jika belum.
-3. Cari repository **`ZiRaraPage`** dan klik **"Import"**.
+3. Cari repository **`ZhaRaPorto`** dan klik **"Import"**.
 4. Di bagian **Build & Output Settings**, Vercel akan otomatis mengenali Next.js. Anda tidak perlu mengubah apapun.
 5. Klik **"Deploy"**.
 6. Tunggu ~1 menit. Selesai!

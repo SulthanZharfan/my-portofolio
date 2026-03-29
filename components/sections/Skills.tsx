@@ -20,9 +20,9 @@ export const Skills = () => {
           <Reveal key={idx} width="100%" delay={idx * 0.2}>
             <div className="flex flex-col gap-6 md:gap-8">
               <div className="flex items-center gap-3 px-4 py-2 bg-neon-purple/5 border-l-4 border-neon-purple rounded-r-md w-fit">
-                 <span className="text-[10px] md:text-xs font-bold tracking-widest text-neon-purple uppercase">{group.category}</span>
+                <span className="text-[10px] md:text-xs font-bold tracking-widest text-neon-purple uppercase">{group.category}</span>
               </div>
-              
+
               <div className="grid gap-4 md:gap-6">
                 {group.items.map((skill, sIdx) => (
                   <CyberCard key={sIdx} className="p-4 md:p-5 flex flex-col gap-3 group relative overflow-hidden border-neon-purple/20">
@@ -37,25 +37,25 @@ export const Skills = () => {
                         </div>
                       </div>
                       <div className="flex flex-col items-end">
-                          <span className="text-[9px] font-mono text-neon-ice/70 uppercase leading-none mb-1">Rank</span>
-                          <span className="text-[11px] font-mono text-neon-ice font-bold drop-shadow-neon-ice">LVL : {skill.level?.toString().padStart(2, '0') || "01"}</span>
+                        <span className="text-[9px] font-mono text-neon-ice/70 uppercase leading-none mb-1">Rank</span>
+                        <span className="text-[11px] font-mono text-neon-ice font-bold drop-shadow-neon-ice">LVL : {skill.level?.toString().padStart(2, '0') || "01"}</span>
                       </div>
                     </div>
 
                     <div className="relative h-1.5 w-full bg-black/40 rounded-full border border-white/5 overflow-hidden">
-                       <motion.div 
-                         initial={{ width: 0 }}
-                         whileInView={{ width: "65%" }}
-                         transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
-                         className="absolute inset-y-0 left-0 bg-gradient-to-r from-neon-purple via-neon-ice to-transparent shadow-[0_0_10px_rgba(101,147,245,0.5)]"
-                       />
-                       <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,rgba(255,255,255,0.1)_4px,rgba(255,255,255,0.1)_5px)]" />
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "65%" }}
+                        transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
+                        className="absolute inset-y-0 left-0 bg-gradient-to-r from-neon-purple via-neon-ice to-transparent shadow-[0_0_10px_rgba(101,147,245,0.5)]"
+                      />
+                      <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,rgba(255,255,255,0.1)_4px,rgba(255,255,255,0.1)_5px)]" />
                     </div>
 
                     <div className="flex justify-between items-center text-[8px] font-mono text-neutral-500 uppercase tracking-widest">
                       <div className="flex items-center gap-1">
-                          <span className="w-1 h-1 rounded-full bg-neon-ice animate-pulse" />
-                          <span>Syncing Data...</span>
+                        <span className="w-1 h-1 rounded-full bg-neon-ice animate-pulse" />
+                        <span>Syncing Data...</span>
                       </div>
                       <span>XP: 1024 / 2048</span>
                     </div>

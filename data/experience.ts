@@ -12,20 +12,29 @@ export const experience: Experience[] = [
   },
   {
     company: "Universitas Pancasila",
-    role: { en: "Website Based Programming Laboratory Teaching Assistant", id: "Asisten Dosen Lab Pemrograman Berbasis Web" },
+    role: { en: "Website Based Programming Laboratory Assistant", id: "Asisten Praktikum Pemrograman Berbasis Web" },
     duration: "Sep 2025 - Dec 2025",
     description: { 
-      en: "Contract-based teaching assistant for Website-based programming laboratory. Specialized in Laravel and web architecture.", 
-      id: "Asisten pengajar kontrak untuk laboratorium pemrograman berbasis Website. Spesialisasi dalam Laravel dan arsitektur web." 
+      en: "Contract-based assistant for Website-based programming laboratory. Specialized in Laravel and web architecture.", 
+      id: "Asisten praktikum kontrak untuk laboratorium pemrograman berbasis Website. Spesialisasi dalam Laravel dan arsitektur web." 
+    }
+  },
+  {
+    company: "VINIX7",
+    role: { en: "Junior Web Developer & UI/UX Intern", id: "Magang Junior Web Developer & UI/UX" },
+    duration: "Jan 2024 - Mar 2024",
+    description: {
+      en: "Worked as a Junior Web Developer and UI/UX designer focusing on modern web interfaces.",
+      id: "Bekerja sebagai Junior Web Developer dan desainer UI/UX dengan fokus pada antarmuka web modern."
     }
   },
   {
     company: "Universitas Pancasila",
-    role: { en: "Computer Network Laboratory Teaching Assistant", id: "Asisten Dosen Lab Jaringan Komputer" },
+    role: { en: "Computer Network Laboratory Assistant", id: "Asisten Praktikum Jaringan Komputer" },
     duration: "Mar 2025 - Jul 2025",
     description: { 
-      en: "Teaching assistant for Computer Network laboratory. Focused on Cisco Networking and network infrastructure.", 
-      id: "Asisten pengajar untuk laboratorium Jaringan Komputer. Berfokus pada Cisco Networking dan infrastruktur jaringan." 
+      en: "Laboratory assistant for Computer Network. Focused on Cisco Networking and network infrastructure.", 
+      id: "Asisten praktikum untuk laboratorium Jaringan Komputer. Berfokus pada Cisco Networking dan infrastruktur jaringan." 
     }
   }
 ];
