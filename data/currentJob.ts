@@ -8,5 +8,6 @@ export const currentJob: CurrentJob = {
     en: "Assisting in the development and optimization of internal web applications, focusing on creating efficient, reliable, and user-friendly digital solutions.",
     id: "Membantu pengembangan dan optimalisasi aplikasi web internal, berfokus pada penciptaan solusi digital yang efisien, andal, dan ramah pengguna."
   },
-  startDate: "Mar 2026"
+  startDate: "Mar 2026",
+  env: "PRODUCTION"
 };

@@ -42,10 +42,10 @@ export const CurrentJob = () => {
                 <div className="pt-4 flex items-center justify-center md:justify-start gap-4 text-xs font-mono text-foreground/50">
                   <span className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-neon-ice animate-pulse" />
-                    START_DATE: {currentJob.startDate}
+                    {trans.start}: {currentJob.startDate}
                   </span>
                   <span>|</span>
-                  <span>ENV: {trans.env}</span>
+                  <span>{trans.env}: {currentJob.env || "PRODUCTION"}</span>
                 </div>
               </div>
 

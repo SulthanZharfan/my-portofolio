@@ -33,7 +33,7 @@ export const Projects = () => {
                  />
                  <div className="absolute top-2 right-2 px-2 py-1 bg-black/50 backdrop-blur-sm rounded text-[10px] text-white font-mono flex items-center gap-1 z-10">
                     <div className="w-1.5 h-1.5 rounded-full bg-neon-ice animate-pulse" />
-                    STATUS: ACTIVE
+                    {trans.status}: {trans.active}
                  </div>
               </div>
               

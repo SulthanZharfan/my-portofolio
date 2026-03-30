@@ -17,24 +17,41 @@ export const translations = {
     about: {
       title: "About Me",
       goal: "Bridging Imagination & Reality",
-      base: "Base",
+      base: "Location",
       exp: "Experience",
       years: "< 1 Year",
+      scan: "[ IDENTITY_SCAN ]",
     },
     skills: {
       title: "Technical Arsenal",
+      module: "System Module",
+      active: "Active",
+      rank: "Rank",
+      sync: "Syncing Data...",
+      xp: "XP",
+      categories: {
+        frontend: "Frontend & Mobile",
+        backend: "Backend & Database",
+      }
     },
     projects: {
       title: "Digital Artifacts",
       viewLive: "Initialize",
       viewCode: "Source",
+      status: "STATUS",
+      active: "ACTIVE",
     },
     experience: {
       title: "Quest Log",
+      present: "Present",
     },
     currentJob: {
       title: "Current Status",
-      env: "PRODUCTION",
+      env: "ENVIRONMENT",
+      start: "START_DATE",
+    },
+    footer: {
+      status: "System_Online",
     },
     certificates: {
       title: "System Verifications",
@@ -72,30 +89,48 @@ export const translations = {
       base: "Lokasi",
       exp: "Pengalaman",
       years: "< 1 Tahun",
+      scan: "[ PINDAI_IDENTITAS ]",
     },
     skills: {
-      title: "Arsenal Teknis",
+      title: "Modul Keahlian",
+      module: "Modul Sistem",
+      active: "Aktif",
+      rank: "Peringkat",
+      sync: "Sinkronisasi Data...",
+      xp: "XP",
+      categories: {
+        frontend: "Antarmuka & Seluler",
+        backend: "Layanan & Basis Data",
+      }
     },
     projects: {
       title: "Artefak Digital",
-      viewLive: "Inisialisasi",
+      viewLive: "Akses",
       viewCode: "Sumber",
+      status: "STATUS",
+      active: "AKTIF",
     },
     experience: {
-      title: "Log Petualangan",
+      title: "Riwayat Pengalaman",
+      present: "Sekarang",
     },
     currentJob: {
       title: "Status Terkini",
-      env: "PRODUKSI",
+      env: "LINGKUNGAN",
+      start: "TANGGAL_MULAI",
+    },
+    footer: {
+      status: "Sistem_Online",
     },
     certificates: {
       title: "Verifikasi Sistem",
       view: "Verifikasi",
     },
+
     contact: {
       title: "Hubungi Saya",
       email: "Komunikasi Langsung",
-      socials: "Tautan Syaraf",
+      socials: "Tautan Digital",
       name: "Nama identitas",
       mail: "Alamat email otentikasi",
       msg: "Pesan protokol",
@@ -104,3 +139,4 @@ export const translations = {
     }
   }
 };
+

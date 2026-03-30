@@ -20,7 +20,9 @@ export const Skills = () => {
           <Reveal key={idx} width="100%" delay={idx * 0.2}>
             <div className="flex flex-col gap-6 md:gap-8">
               <div className="flex items-center gap-3 px-4 py-2 bg-neon-purple/5 border-l-4 border-neon-purple rounded-r-md w-fit">
-                <span className="text-[10px] md:text-xs font-bold tracking-widest text-neon-purple uppercase">{group.category}</span>
+                <span className="text-[10px] md:text-xs font-bold tracking-widest text-neon-purple uppercase">
+                  {t.categories[group.category as keyof typeof t.categories]}
+                </span>
               </div>
 
               <div className="grid gap-4 md:gap-6">
@@ -33,11 +35,11 @@ export const Skills = () => {
                         </div>
                         <div className="flex flex-col">
                           <span className="font-bold text-sm tracking-widest uppercase text-foreground/90 group-hover:text-neon-ice transition-colors">{skill.name}</span>
-                          <span className="text-[8px] font-mono text-neutral-500 uppercase tracking-tighter">System Module :: Active</span>
+                          <span className="text-[8px] font-mono text-neutral-500 uppercase tracking-tighter">{t.module} :: {t.active}</span>
                         </div>
                       </div>
                       <div className="flex flex-col items-end">
-                        <span className="text-[9px] font-mono text-neon-ice/70 uppercase leading-none mb-1">Rank</span>
+                        <span className="text-[9px] font-mono text-neon-ice/70 uppercase leading-none mb-1">{t.rank}</span>
                         <span className="text-[11px] font-mono text-neon-ice font-bold drop-shadow-neon-ice">LVL : {skill.level?.toString().padStart(2, '0') || "01"}</span>
                       </div>
                     </div>
@@ -55,10 +57,11 @@ export const Skills = () => {
                     <div className="flex justify-between items-center text-[8px] font-mono text-neutral-500 uppercase tracking-widest">
                       <div className="flex items-center gap-1">
                         <span className="w-1 h-1 rounded-full bg-neon-ice animate-pulse" />
-                        <span>Syncing Data...</span>
+                        <span>{t.sync}</span>
                       </div>
-                      <span>XP: 1024 / 2048</span>
+                      <span>{t.xp}: 1024 / 2048</span>
                     </div>
+
                   </CyberCard>
                 ))}
               </div>

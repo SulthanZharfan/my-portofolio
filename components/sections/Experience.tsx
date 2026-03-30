@@ -9,14 +9,14 @@ import { useLanguage } from '@/context/LanguageContext';
 import { Briefcase, Calendar } from 'lucide-react';
 import { GlowEffect } from '../ui/GlowEffect';
 import { Reveal } from '../animation/Reveal';
+import { translations } from '@/data/translations';
 
 export const Experience = () => {
-  const { t } = useLanguage();
-
-  const title = { en: "Quest Log", id: "Log Petualangan" };
+  const { language, t } = useLanguage();
+  const trans = translations[language].experience;
 
   return (
-    <SectionWrapper id="experience" title={t(title)}>
+    <SectionWrapper id="experience" title={trans.title}>
       <GlowEffect color="purple" size="md" className="right-0 top-1/2" />
       
       <div className="relative space-y-12">
@@ -48,7 +48,7 @@ export const Experience = () => {
                   
                   <div className="flex items-center gap-2 text-neutral-400 text-[10px] mb-6 px-2 py-0.5 rounded bg-border/20 w-fit font-mono">
                     <Calendar size={12} />
-                    <span>{exp.duration}</span>
+                    <span>{exp.duration.replace("Present", trans.present)}</span>
                   </div>
                   
                   <p className="text-neutral-500 text-sm leading-relaxed border-l-2 border-border pl-4 py-1">

@@ -32,6 +32,7 @@ export interface CurrentJob {
   status: Translatable | string;
   description: Translatable | string;
   startDate: string;
+  env?: string;
 }
 
 export interface Certificate {

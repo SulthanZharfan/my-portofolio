@@ -33,7 +33,7 @@ export const About = () => {
             />
 
             <div className="absolute bottom-4 left-4 z-20">
-              <span className="text-[10px] font-mono tracking-widest text-white/40 group-hover:text-neon-ice transition-colors">[ IDENTITY_SCAN ]</span>
+              <span className="text-[10px] font-mono tracking-widest text-white/40 group-hover:text-neon-ice transition-colors">{trans.scan}</span>
             </div>
           </CyberCard>
 

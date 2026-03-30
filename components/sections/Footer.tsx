@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/data/translations';
 
 export const Footer = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const year = new Date().getFullYear();
 
   const content = {
@@ -24,7 +25,9 @@ export const Footer = () => {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-neon-purple animate-pulse" />
-            <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">System_Online</span>
+            <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+              {translations[language].footer.status}
+            </span>
           </div>
           <div className="h-4 w-px bg-neutral-200" />
           <div className="text-[10px] font-mono text-neutral-300">
