@@ -1,4 +1,4 @@
-# ZhaRaPorto ⚡
+# ZhaRaPorto 👥
 ![ZhaRaPoro Banner](public/readme-banner.svg)
 
 ---
