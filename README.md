@@ -1,4 +1,4 @@
-# ZhaRaPorto 👥
+# ZhaRaPorto ⚡
 ![ZhaRaPoro Banner](public/readme-banner.svg)
 
 ---
@@ -19,6 +19,7 @@
 
 > [!IMPORTANT]
 > **🚀 LAUNCH PORTFOLIO HUD:** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
+> *(Ganti teks dan tautan di atas dengan link website portfolio Anda setelah dideploy ke Vercel/domain kustom)*
 
 ---
 
@@ -29,101 +30,66 @@ The design is heavily inspired by sci-fi gaming interfaces, presenting informati
 
 ---
 
-## 🎮 Key Features
-- 🌐 **Bilingual System (EN/ID):** Seamless language switcher embedded directly in the futuristic navigation bar.
-- ⚙️ **Dynamic Auto-Versioning:** The system automatically syncs its footer version with the version defined in `package.json` (integrated via Next.js logic).
-- 🧬 **Interactive Tech Arsenal:** Skills grouped by frontend, backend, and tools, complete with active status and XP indicator animations.
-- 📜 **Quest Log (Work Experience):** A stylized chronological path of developer work history, showing current environment and status.
-- 📁 **Digital Artifacts (Projects Showcase):** Clean grid displaying real-world projects with customizable source code links and tags.
-- ✉️ **Neural Link (Contact Form):** Futuristic contact interface with built-in validation and success indicators.
-- 🌗 **Ambient Glow Effect:** Moving backdrop lighting and glassmorphism elements to create a premium, immersive look.
+## 🎯 Mengapa Saya Membuat Portofolio Ini?
+
+Saya membangun website portofolio ini dengan tujuan utama untuk:
+
+1. **Mempermudah Klien & Rekruter:** Menjadi pintu gerbang satu atap (*one-stop hub*) bagi klien, calon pemberi kerja, dan kolega profesional untuk melacak "Quest Log" (pengalaman karir), melihat "Digital Artifacts" (proyek), memverifikasi sertifikasi, dan langsung menghubungi saya secara instan.
+2. **Karya Nyata Desain & Animasi:** Portofolio ini merepresentasikan keahlian saya dalam membangun aplikasi web.
+3. **Transparansi Kompetensi:** Menghadirkan semua pencapaian profesional dan modul keahlian saya secara terbuka.
 
 ---
 
-## 🛠️ Tech Stack & Technologies Used
+## 🚀 Perjalanan Karir & Pengalaman (Quest Log)
 
-- **Framework:** Next.js 15.1 (App Router)
-- **Frontend Library:** React 19.0
-- **Styling:** Tailwind CSS (with Glassmorphic utilities)
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Language:** TypeScript
-- **Deployment:** Optimized for Vercel
-
----
-
-## 📁 Repository Structure
-```bash
-ZhaRaPorto/
-├── app/                  # Next.js App Router (Layouts, Globals, Home Page)
-├── components/           # UI and Section Components
-│   ├── animation/        # Background animations (BackgroundGlow)
-│   ├── sections/         # Individual sections (Navbar, Hero, Skills, Projects, etc.)
-│   └── ui/               # Reusable UI primitives
-├── data/                 # Static content, projects, and translation dictionaries
-├── public/               # Static assets (images, projects showcase, animated SVG banner)
-├── styles/               # CSS styling sheets
-├── next.config.ts        # Next.js configuration
-├── package.json          # Dependency tree & auto-version sync source
-└── tailwind.config.ts    # Tailwind styling variables and custom animations
-```
+* **PT. Prima Karya Sarana Sejahtera (Grup BRI)** - *Web Developer Intern / Software Engineer* (Maret 2026 - Sekarang)
+  * Membantu pengembangan dan optimalisasi aplikasi web internal perusahaan guna menciptakan sistem operasional yang efisien dan andal.
+* **Universitas Pancasila** - *Asisten Praktikum Pemrograman Berbasis Web* (September 2025 - Desember 2025)
+  * Membimbing mahasiswa dalam mempelajari pemrograman berbasis web dengan fokus pada framework Laravel dan arsitektur web modern.
+* **Universitas Pancasila** - *Asisten Praktikum Jaringan Komputer* (Maret 2025 - Juli 2025)
+  * Mengajar praktikum jaringan komputer, berfokus pada Cisco Networking dan manajemen infrastruktur jaringan.
+* **VINIX7** - *Magang Junior Web Developer & UI/UX* (Januari 2024 - Maret 2024)
+  * Terlibat dalam merancang dan mengembangkan antarmuka web modern yang estetik serta responsif.
 
 ---
 
-## 🚀 Getting Started & Local Development
+## 🧬 Senjata & Modul Keahlian (Tech Arsenal)
 
-To run this portfolio locally on your machine, follow these steps:
+Dalam membangun solusi digital, saya mengandalkan modul teknologi berikut:
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/SulthanZharfan/my-portofolio.git
-cd my-portofolio
-```
-
-### 2. Install dependencies
-Ensure you have [Node.js](https://nodejs.org) installed, then run:
-```bash
-npm install
-```
-
-### 3. Run the development server
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
-
-### 4. Build for production
-To build a static production bundle:
-```bash
-npm run build
-```
+* **Antarmuka & Seluler (Frontend):** React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Native.
+* **Layanan & Basis Data (Backend):** Node.js, PostgreSQL, REST API.
+* **Alat Kerja (Tools):** Git, Figma.
 
 ---
 
-## 📦 Version Management Plan
+## 🏆 Verifikasi Sistem & Sertifikasi
 
-This repository utilizes an automated versioning system connected to `package.json`.
-To update the version shown on the website's footer, you can update the version field in `package.json` manually or use npm commands:
-- **Patch (Bug fixes):** `npm version patch`
-- **Minor (New features):** `npm version minor`
-- **Major (Breaking/Total revamp):** `npm version major`
-
-See [VERSIONING_PLAN.md](VERSIONING_PLAN.md) for more details.
+* **Sertifikat Kompetensi BNSP - Web Developer** (Lembaga Sertifikasi Profesi, 2024)
+* **Sertifikat Asisten Laboratorium Pemrograman Web** (Universitas Pancasila, 2025)
+* **Sertifikat Magang Junior Web Developer & UI/UX** (VINIX7, 2024)
+* **Sertifikat Asisten Laboratorium Jaringan Komputer** (Universitas Pancasila, 2025)
 
 ---
 
-## 📊 System Activity & Stats (GitHub Profile Widgets)
+## 📊 Aktivitas GitHub (System Stats)
 
-If you'd like to showcase your GitHub stats with a matching cyberpunk design in this README, you can copy the following markdown snippet:
-
-```markdown
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SulthanZharfan&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SulthanZharfan&theme=tokyonight" alt="GitHub Streak" />
 </div>
-```
 
 ---
 
-## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).
+## ✉️ Hubungi Saya (Neural Link)
+
+Saya selalu terbuka untuk kolaborasi proyek baru, peluang karir, maupun diskusi seputar pengembangan teknologi. Hubungi saya langsung melalui portal kontak di website portofolio atau kontak di bawah ini:
+
+* **Email:** [zharfan2231@gmail.com](mailto:zharfan2231@gmail.com)
+* **LinkedIn:** [linkedin.com/in/muhammadsulthanzharfan](https://www.linkedin.com/in/muhammadsulthanzharfan/)
+* **GitHub:** [github.com/SulthanZharfan](https://github.com/SulthanZharfan)
+
+---
+
+## 📜 Lisensi
+Proyek portofolio ini bersifat open-source dan berada di bawah lisensi [MIT License](LICENSE).
