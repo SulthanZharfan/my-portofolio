@@ -19,8 +19,6 @@
 
 > [!IMPORTANT]
 > **🚀 LAUNCH PORTFOLIO HUD:** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
-> *(Ganti teks dan tautan di atas dengan link website portfolio Anda setelah dideploy ke Vercel/domain kustom)*
-
 ---
 
 ## 🌌 Project Overview
@@ -35,7 +33,7 @@ The design is heavily inspired by sci-fi gaming interfaces, presenting informati
 Saya membangun website portofolio ini dengan tujuan utama untuk:
 
 1. **Mempermudah Klien & Rekruter:** Menjadi pintu gerbang satu atap (*one-stop hub*) bagi klien, calon pemberi kerja, dan kolega profesional untuk melacak "Quest Log" (pengalaman karir), melihat "Digital Artifacts" (proyek), memverifikasi sertifikasi, dan langsung menghubungi saya secara instan.
-2. **Karya Nyata Desain & Animasi:** Portofolio ini merepresentasikan keahlian saya dalam membangun aplikasi web.
+2. **Karya Nyata Desain & Animasi:** Portofolio ini merepresentasikan keahlian saya dalam membangun aplikasi web dengan tools yang saya gunakan.
 3. **Transparansi Kompetensi:** Menghadirkan semua pencapaian profesional dan modul keahlian saya secara terbuka.
 
 ---
@@ -57,7 +55,7 @@ Saya membangun website portofolio ini dengan tujuan utama untuk:
 
 Dalam membangun solusi digital, saya mengandalkan modul teknologi berikut:
 
-* **Antarmuka & Seluler (Frontend):** React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Native.
+* **Antarmuka & Seluler (Frontend):** React, Next.js, TypeScript, Tailwind CSS, React Native.
 * **Layanan & Basis Data (Backend):** Node.js, PostgreSQL, REST API.
 * **Alat Kerja (Tools):** Git, Figma.
 
