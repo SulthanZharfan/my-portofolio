@@ -4,7 +4,7 @@ export const certificates: Certificate[] = [
   {
     title: { en: "BNSP Competency Certification - Web Developer", id: "Sertifikat Kompetensi BNSP - Web Developer" },
     issuer: "BNSP",
-    year: "2024",
+    year: "2026",
     link: "#"
   },
   {
@@ -16,7 +16,7 @@ export const certificates: Certificate[] = [
   {
     title: { en: "Junior Web Developer & UI/UX Intern", id: "Magang Junior Web Developer & UI/UX" },
     issuer: "VINIX7",
-    year: "2024",
+    year: "2025",
     link: "#"
   },
   {

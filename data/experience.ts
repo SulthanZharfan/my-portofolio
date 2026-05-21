@@ -22,7 +22,7 @@ export const experience: Experience[] = [
   {
     company: "VINIX7",
     role: { en: "Junior Web Developer & UI/UX Intern", id: "Magang Junior Web Developer & UI/UX" },
-    duration: "Jan 2024 - Mar 2024",
+    duration: "Aug 2025 - Dec 2025",
     description: {
       en: "Worked as a Junior Web Developer and UI/UX designer focusing on modern web interfaces.",
       id: "Bekerja sebagai Junior Web Developer dan desainer UI/UX dengan fokus pada antarmuka web modern."

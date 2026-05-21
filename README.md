@@ -44,7 +44,7 @@ Melalui portofolio ini, Anda bisa langsung melihat proyek-proyek yang pernah say
   * Membimbing mahasiswa dalam mempelajari pemrograman berbasis web dengan fokus pada framework Laravel dan arsitektur web modern.
 * **Universitas Pancasila** - *Asisten Praktikum Jaringan Komputer* (Maret 2025 - Juli 2025)
   * Mengajar praktikum jaringan komputer, berfokus pada Cisco Networking dan manajemen infrastruktur jaringan.
-* **VINIX7** - *Magang Junior Web Developer & UI/UX* (Januari 2024 - Maret 2024)
+* **VINIX7** - *Magang Junior Web Developer & UI/UX* (Agustus 2025 - Desember 2025)
   * Terlibat dalam merancang dan mengembangkan antarmuka web modern yang estetik serta responsif.
 
 ---
@@ -61,9 +61,9 @@ Dalam membangun solusi digital, saya mengandalkan modul teknologi berikut:
 
 ## 🏆 Verifikasi Sistem & Sertifikasi
 
-* **Sertifikat Kompetensi BNSP - Web Developer** (Lembaga Sertifikasi Profesi, 2024)
+* **Sertifikat Kompetensi BNSP - Web Developer** (Lembaga Sertifikasi Profesi, 2026)
 * **Sertifikat Asisten Laboratorium Pemrograman Web** (Universitas Pancasila, 2025)
-* **Sertifikat Magang Junior Web Developer & UI/UX** (VINIX7, 2024)
+* **Sertifikat Magang Junior Web Developer & UI/UX** (VINIX7, 2025)
 * **Sertifikat Asisten Laboratorium Jaringan Komputer** (Universitas Pancasila, 2025)
 
 ---
