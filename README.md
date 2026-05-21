@@ -19,7 +19,6 @@
 
 > [!IMPORTANT]
 > **🚀 LAUNCH PORTFOLIO HUD:** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
-> *(Ganti teks dan tautan di atas dengan link website portfolio Anda setelah dideploy ke Vercel/domain kustom)*
 
 ---
 
