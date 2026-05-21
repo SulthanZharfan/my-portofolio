@@ -20,21 +20,19 @@
 > [!IMPORTANT]
 > **🚀 LAUNCH PORTFOLIO :** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
 ---
+## 👤 Tentang Saya (About Me)
 
-## 🌌 Project Overview
-**ZhaRaPorto** is a premium, futuristic cyberpunk/gaming HUD-themed developer portfolio designed to showcase skills, projects, work experience, and certifications. Built using **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS**, it features a fully bilingual interface (English & Indonesian) and responsive animations powered by **Framer Motion**.
+Halo! Saya **Muhammad Sulthan Zharfan**, seorang Web Developer dan Software Engineer yang saat ini tinggal di **Bogor, Indonesia**.
 
-The design is heavily inspired by sci-fi gaming interfaces, presenting information as "System Modules", "Quest Logs", and "Digital Artifacts" with glowing borders, hover micro-animations, and dynamic scanning lines.
+Perjalanan saya dimulai dari rasa penasaran yang besar terhadap dunia pemrograman dan bagaimana teknologi web bekerja. Saya selalu tertarik melihat bagaimana sebuah ide bisa diwujudkan menjadi tampilan interaktif di layar browser.
 
 ---
 
 ## 🎯 Mengapa Saya Membuat Portofolio Ini?
 
-Saya membangun website portofolio ini dengan tujuan utama untuk:
+Saya merancang website portofolio ini agar orang-orang, baik itu klien, calon rekan kerja, maupun rekruter, bisa dengan mudah menemukan dan mengenal saya lebih jauh.
 
-1. **Mempermudah Klien & Rekruter:** Menjadi pintu gerbang satu atap (*one-stop hub*) bagi klien, calon pemberi kerja, dan kolega profesional untuk melacak "Quest Log" (pengalaman karir), melihat "Digital Artifacts" (proyek), memverifikasi sertifikasi, dan langsung menghubungi saya secara instan.
-2. **Karya Nyata Desain & Animasi:** Portofolio ini merepresentasikan keahlian saya dalam membangun aplikasi web dengan tools yang saya gunakan.
-3. **Transparansi Kompetensi:** Menghadirkan semua pencapaian profesional dan modul keahlian saya secara terbuka.
+Melalui portofolio ini, Anda bisa langsung melihat proyek-proyek yang pernah saya kerjakan, melacak riwayat perjalanan karir saya, memverifikasi sertifikat kompetensi yang sudah saya miliki, dan tentunya menghubungi saya secara langsung jika ada hal yang ingin dikolaborasikan.
 
 ---
 
