@@ -15,10 +15,10 @@
 
 ---
 
-## 🔗 LIVE DEMO & LAUNCH
+## 🔗 Come to My Portofolio
 
 > [!IMPORTANT]
-> **🚀 LAUNCH PORTFOLIO HUD:** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
+> **🚀 LAUNCH PORTFOLIO :** [👉 sulthanzharfan.github.io/my-portofolio/ 👈](https://sulthanzharfan.github.io/my-portofolio/)
 ---
 
 ## 🌌 Project Overview
