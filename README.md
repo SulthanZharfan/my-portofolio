@@ -68,15 +68,6 @@ Dalam membangun solusi digital, saya mengandalkan modul teknologi berikut:
 
 ---
 
-## 📊 Aktivitas GitHub (System Stats)
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SulthanZharfan&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=SulthanZharfan&theme=tokyonight" alt="GitHub Streak" />
-</div>
-
----
-
 ## ✉️ Hubungi Saya (Neural Link)
 
 Saya selalu terbuka untuk kolaborasi proyek baru, peluang karir, maupun diskusi seputar pengembangan teknologi. Hubungi saya langsung melalui portal kontak di website portofolio atau kontak di bawah ini:
@@ -84,8 +75,3 @@ Saya selalu terbuka untuk kolaborasi proyek baru, peluang karir, maupun diskusi 
 * **Email:** [zharfan2231@gmail.com](mailto:zharfan2231@gmail.com)
 * **LinkedIn:** [linkedin.com/in/muhammadsulthanzharfan](https://www.linkedin.com/in/muhammadsulthanzharfan/)
 * **GitHub:** [github.com/SulthanZharfan](https://github.com/SulthanZharfan)
-
----
-
-## 📜 Lisensi
-Proyek portofolio ini bersifat open-source dan berada di bawah lisensi [MIT License](LICENSE).
