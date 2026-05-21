@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%" style="background:#09090b; font-family:'Courier New', Courier, monospace;">
+  <!-- defs for filters and gradients -->
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <!-- Neon Purple Glow Filter -->
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Neon Cyan Glow Filter -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(168, 85, 247, 0.08)" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1.5" fill="#06b6d4" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes scanline {
+      0% { transform: translateY(-350px); }
+      100% { transform: translateY(350px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 2px #06b6d4); }
+      50% { opacity: 1; filter: drop-shadow(0 0 10px #06b6d4); }
+    }
+    @keyframes title-pulse {
+      0%, 100% { fill: #ffffff; filter: drop-shadow(0 0 2px #a855f7); }
+      50% { fill: #f3e8ff; filter: drop-shadow(0 0 12px #a855f7) drop-shadow(0 0 20px #06b6d4); }
+    }
+    @keyframes terminal-blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .bg { fill: url(#bg-grad); }
+    .grid-overlay { fill: url(#grid); }
+    .scan-bar {
+      fill: rgba(6, 182, 212, 0.08);
+      animation: scanline 8s linear infinite;
+    }
+    .title {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      animation: title-pulse 4s ease-in-out infinite;
+    }
+    .subtitle {
+      font-size: 14px;
+      fill: #06b6d4;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .terminal-caret {
+      fill: #06b6d4;
+      animation: terminal-blink 1s step-end infinite;
+    }
+    .corner-accent {
+      stroke: #06b6d4;
+      stroke-width: 3;
+      filter: url(#glow-cyan);
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .module-box {
+      fill: rgba(15, 23, 42, 0.6);
+      stroke: #06b6d4;
+      stroke-opacity: 0.3;
+      stroke-width: 1;
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background and grid -->
+  <rect width="100%" height="100%" class="bg" />
+  <rect width="100%" height="100%" class="grid-overlay" />
+
+  <!-- Animated Scanline -->
+  <rect width="100%" height="15" class="scan-bar" />
+
+  <!-- Outer Cyberpunk Frame -->
+  <rect x="15" y="15" width="770" height="320" fill="none" stroke="#3f3f46" stroke-width="1" stroke-opacity="0.3" />
+  <rect x="20" y="20" width="760" height="310" fill="none" stroke="#a855f7" stroke-width="1" stroke-opacity="0.15" />
+  
+  <!-- Cyberpunk cut corners decoration -->
+  <path d="M 20 50 L 20 20 L 50 20" fill="none" class="corner-accent" />
+  <path d="M 780 50 L 780 20 L 750 20" fill="none" class="corner-accent" />
+  <path d="M 20 300 L 20 330 L 50 330" fill="none" class="corner-accent" />
+  <path d="M 780 300 L 780 330 L 750 330" fill="none" class="corner-accent" />
+
+  <!-- Top bar info -->
+  <text x="35" y="40" class="tag" fill="#a855f7" opacity="0.8">SYSTEM: ACTIVE</text>
+  <text x="765" y="40" text-anchor="end" class="tag" fill="#06b6d4" opacity="0.8">v2.0.0 // PROTOCOL_SECURE</text>
+
+  <!-- Main Center Header -->
+  <g transform="translate(0, 0)">
+    <!-- Glowing background elements for title -->
+    <text x="400" y="150" text-anchor="middle" class="title" fill="#ffffff" filter="url(#glow-purple)">ZHARA_PORTO</text>
+    
+    <!-- Subtitle with cursor -->
+    <text x="400" y="195" text-anchor="middle" class="subtitle">
+      &gt; CRAFTING DIGITAL WORLDS THROUGH CODE
+    </text>
+    <rect x="635" y="182" width="8" height="15" class="terminal-caret" />
+  </g>
+
+  <!-- Tech Modules (Floating containers in the bottom area) -->
+  <!-- Module 1: FRONTEND -->
+  <g transform="translate(100, 240)">
+    <rect width="180" height="50" rx="4" class="module-box" style="animation-delay: 0s;" />
+    <text x="90" y="22" text-anchor="middle" font-size="10" fill="#06b6d4" font-weight="bold">MODULE: FRONTEND</text>
+    <text x="90" y="38" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="bold">Next.js • React • TS</text>
+  </g>
+
+  <!-- Module 2: BACKEND -->
+  <g transform="translate(310, 240)">
+    <rect width="180" height="50" rx="4" class="module-box" style="animation-delay: 1.3s;" />
+    <text x="90" y="22" text-anchor="middle" font-size="10" fill="#a855f7" font-weight="bold">MODULE: BACKEND</text>
+    <text x="90" y="38" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="bold">Node.js • PostgreSQL</text>
+  </g>
+
+  <!-- Module 3: MOBILE & TOOLS -->
+  <g transform="translate(520, 240)">
+    <rect width="180" height="50" rx="4" class="module-box" style="animation-delay: 2.6s;" />
+    <text x="90" y="22" text-anchor="middle" font-size="10" fill="#eab308" font-weight="bold">MODULE: SYSTEMS</text>
+    <text x="90" y="38" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="bold">React Native • Git • UI</text>
+  </g>
+
+  <!-- Grid overlay subtle points -->
+  <circle cx="400" cy="80" r="2" fill="#06b6d4" opacity="0.6" />
+  <line x1="400" y1="40" x2="400" y2="70" stroke="#06b6d4" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+  
+  <!-- Ambient glowing side dots -->
+  <circle cx="50" cy="175" r="3" fill="#a855f7" filter="url(#glow-purple)" />
+  <circle cx="750" cy="175" r="3" fill="#06b6d4" filter="url(#glow-cyan)" />
+</svg>
