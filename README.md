@@ -74,7 +74,7 @@ Dalam membangun solusi digital, saya mengandalkan modul teknologi berikut:
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SulthanZharfan&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SulthanZharfan&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=SulthanZharfan&theme=tokyonight" alt="GitHub Streak" />
 </div>
 
 ---
